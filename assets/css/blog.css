@@ -1,7 +1,8 @@
 *{
     padding: 0;
     margin: 0;
-    text-decoration: none;
+    
+    
     
 }
 .name-board{
@@ -18,8 +19,11 @@
 	justify-content: center;
     width: 100%;
     height: auto;
-    color: black;
 }
+
+a{color: black;
+   text-decoration: none;}
+
 .board-contents{
     display: flex;
     flex-direction: row;

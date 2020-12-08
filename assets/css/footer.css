@@ -15,4 +15,23 @@
   }
 
 
- 
+ /* スマホ用 */
+ /*iphone 6,7,8plus */
+@media screen and (max-width: 480px) {
+
+  /* footer */
+  footer {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+  }
+
+}
+
+
+
+
+
+
+
+

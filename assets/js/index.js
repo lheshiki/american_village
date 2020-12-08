@@ -6,4 +6,8 @@ $('article')
 .on("mouseleave",function(){
 	$(this).find(".blackLine").removeClass("active");
 });
+
+
+// header部分
+
 });

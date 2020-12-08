@@ -28,7 +28,9 @@
             top: -80%;
             left: 25%;
             }
-                    
+      
+      .navbar-toggler{background-color: black;}
+
       .main_slider{
                 max-width: 100%;
                 margin-top: 280px;

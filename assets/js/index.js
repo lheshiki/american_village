@@ -1,6 +1,6 @@
 $(function(){
-$('article')
-.on('mouseover',function(){
+$("article")
+.on("mouseover",function(){
 	$(this).find(".blackLine").addClass("active");
 })
 .on("mouseleave",function(){

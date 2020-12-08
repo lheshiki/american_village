@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -37,11 +38,21 @@
     </header>
     <div class="container">
         <div class="main_slider col-12">
-            <image src="assets/img/visual_1_pc.png" ></image>
-            <image src="assets/img/logo.png" class="logo"></image>
-            <image src="assets/img/visual_text_pc.png" class="text_image"></image>
+          <picture class="main_pic">
+            <source srcset="assets/img/visual_1_pc.png" media="(min-width: 768px)"/>
+            <source srcset="assets/img/visual_1_sp.png" media="(min-width: 375px)"/>
+            <img src="assets/img/visual_1_pc.png" class="main_image"/>
+          </picture>
+            <img src="assets/img/logo.png" class="logo">
+          <picture>
+            <source srcset="assets/img/visual_text_pc.png" media="(min-width: 768px)">
+            <source srcset="assets/img/visual_text_sp.png" media="(min-width: 375px)"/>
+            <img src="assets/img/visual_text_pc.png" class="text_image">
+          </picture>
         </div>
     </div>
-    <p class="sub_explanation">進化し続ける「街」アメリカンビレッジマガジン</p>
+    <div class="sub-container">
+        <p class="sub_explanation">進化し続ける「街」<br class="subtitle_fix">アメリカンビレッジマガジン</p>
+    </div>
 </body>
 </html>

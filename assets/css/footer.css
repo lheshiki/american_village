@@ -15,4 +15,31 @@
   }
 
 
- 
+ /* スマホ用 */
+ /*iphone  */
+@media screen and (max-width: 480px) {
+
+  /* footer */
+  footer {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+  }
+
+}
+
+@media screen and (max-width: 320px)
+{
+  footer {
+    display: flex;
+    justify-content: center;
+    font-size: x-small;
+  }
+}
+
+
+
+
+
+
+

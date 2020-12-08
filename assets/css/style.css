@@ -24,11 +24,13 @@
     {
       .logo{position: absolute;
             text-align: center;
-            width: 40%;
+            width: 50%;
             top: -80%;
-            left: 30%;
+            left: 25%;
             }
-                    
+      
+      .navbar-toggler{background-color: black;}
+
       .main_slider{
                 max-width: 100%;
                 margin-top: 280px;
@@ -51,7 +53,7 @@
       .sub_explanation{text-align: center;
                        max-width: 100%;
                        margin-left: 0; }
-                       
+
       .subtitle_fix{display: block;}
 
 

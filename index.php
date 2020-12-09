@@ -1,18 +1,21 @@
 <?php get_header();?>
     <div class= "photo_div">
-    <div class="swiper-container swiper-container-horizontal swiper-container-fade">
+    <!-- Slider main container -->
+    <div class="swiper-container">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper" style="transition-duration: 0ms;">
+            <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 110px; transform: translate3d(-110px, 0px, 0px); opacity: 1; transition-duration: 0ms;"><img src="http://localhost/wordpress/wp-content/themes/american_village/assets/img/visual_1_pc.png" class="main_image"></div>
-                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 110px; transform: translate3d(-220px, 0px, 0px); opacity: 1; transition-duration: 0ms;"><img src="http://localhost/wordpress/wp-content/themes/american_village/assets/img/logo.png" class="main_image"></div>
-                <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" style="width: 110px; transform: translate3d(-330px, 0px, 0px); opacity: 0; transition-duration: 0ms;"><img src="http://localhost/wordpress/wp-content/themes/american_village/assets/img/visual_text_sp.png" class="main_image"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_pc.png"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>//assets/img/visual_text_pc.png"></div>
                 ...
-            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 110px; transform: translate3d(-453px, 0px, 0px); opacity: 0; transition-duration: 0ms;"><img src="http://localhost/wordpress/wp-content/themes/EnglishClass/img/155295_s.jpg"></div></div>
+            </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+            <div class="swiper-pagination"></div>
             
             <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
         <script>
             var mySwiper = new Swiper ('.swiper-container', {

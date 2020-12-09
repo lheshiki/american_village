@@ -21,21 +21,14 @@
               <span class="navbar-toggler-icon"></span>
             </button>
           
-            <div class="collapse navbar-collapse justify-content-end" id="navbarsExample08">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-              <a class="nav-link" href="#" style="color: black;">Menu01 <span class="sr-only">（現在位置）</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" style="color: black;">Menu02</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" style="color: black;">Menu03</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: black;">Menu04</a>
-                </li>
-              </ul>
+            <div class="navbar-collapse d-flex flex-row justify-content-end" id="navbarsExample08">
+              <?php
+                wp_nav_menu( array(
+                  'theme_location' => 'global',
+                  'container'      => 'div',
+                  'depth'          => 1,
+                ) );
+              ?>
             </div>
         </nav>
     </header>

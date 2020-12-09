@@ -5,17 +5,38 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_pc.png"></div>
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide2.png"></div>
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Slide3.png"></div>
+                <div class="swiper-slide">
+                <picture class="<?php echo get_template_directory_uri(); ?>/main_pic">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_pc.png" media="(min-width: 768px)"/>
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_sp.png" media="(min-width: 375px)"/>
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_sp.png" media="(min-width: 320px)"/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_pc.png" class="main_image"/>
+                </picture>
+                </div>
+                <div class="swiper-slide">
+                <picture class="<?php echo get_template_directory_uri(); ?>/main_pic">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slide2.png" media="(min-width: 768px)"/>
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slide2_sp.png" media="(min-width: 375px)"/>
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slide2_sp.png" media="(min-width: 320px)"/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide2.png" class="main_image"/>
+                </picture>
+                </div>
+                <div class="swiper-slide">
+                <picture class="<?php echo get_template_directory_uri(); ?>/main_pic">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/Slide3.png" media="(min-width: 768px)"/>
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slide3_sp.png" media="(min-width: 375px)"/>
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slide3_sp.png" media="(min-width: 320px)"/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Slide3.png" class="main_image"/>
+                </picture>
+                </div>
                 ...
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
             
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
         </div>
         <script>
             var mySwiper = new Swiper ('.swiper-container', {
@@ -28,6 +49,7 @@
             })
         </script>
         <!-- ここにあった！ -->
+
     </div>
     <div class="sub-container">
         <p class="sub_explanation">進化し続ける「街」<br class="subtitle_fix">アメリカンビレッジマガジン</p>

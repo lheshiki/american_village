@@ -1,20 +1,37 @@
 <?php get_header();?>
     <div class= "photo_div">
-        <div class="main_slider">
-          <picture class="<?php echo get_template_directory_uri(); ?>/main_pic">
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_pc.png" media="(min-width: 768px)"/>
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_sp.png" media="(min-width: 375px)"/>
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_sp.png" media="(min-width: 320px)"/>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_pc.png" class="main_image"/>
-          </picture>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" class="logo">
-          <picture>
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_pc.png" media="(min-width: 768px)">
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_sp.png" media="(min-width: 375px)"/>
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_sp.png" media="(min-width: 320px)"/>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_pc.png" class="text_image">
-          </picture>
+    <div class="swiper-container swiper-container-horizontal swiper-container-fade">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" style="transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" style="width: 110px; transform: translate3d(0px, 0px, 0px); opacity: 1; transition-duration: 0ms;"><img src="http://localhost/wordpress/wp-content/themes/EnglishClass/img/2592406_s.jpg"></div>
+                <!-- Slides -->
+                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 110px; transform: translate3d(-110px, 0px, 0px); opacity: 1; transition-duration: 0ms;"><img src="http://localhost/wordpress/wp-content/themes/american_village/assets/img/visual_1_pc.png" class="main_image"></div>
+                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 110px; transform: translate3d(-220px, 0px, 0px); opacity: 1; transition-duration: 0ms;"><img src="http://localhost/wordpress/wp-content/themes/american_village/assets/img/logo.png" class="main_image"></div>
+                <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" style="width: 110px; transform: translate3d(-330px, 0px, 0px); opacity: 0; transition-duration: 0ms;"><img src="http://localhost/wordpress/wp-content/themes/american_village/assets/img/visual_text_sp.png" class="main_image"></div>
+                ...
+            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 110px; transform: translate3d(-453px, 0px, 0px); opacity: 0; transition-duration: 0ms;"><img src="http://localhost/wordpress/wp-content/themes/EnglishClass/img/155295_s.jpg"></div></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+            
+            <!-- If we need navigation buttons -->
         </div>
+        <script>
+            var mySwiper = new Swiper ('.swiper-container', {
+            effect: "fade",
+            loop: true,
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            autoplay: 3000,
+            speed:1000,
+            breakpoints: {
+                767: {
+                slidesPerView: 1,
+                spaceBetween: 0
+                }
+            }
+            })
+        </script>
+        <!-- ここにあった！ -->
     </div>
     <div class="sub-container">
         <p class="sub_explanation">進化し続ける「街」<br class="subtitle_fix">アメリカンビレッジマガジン</p>

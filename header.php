@@ -15,6 +15,7 @@
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
     <header>
         <nav class="navbar navbar-expand-lg ">

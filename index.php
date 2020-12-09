@@ -2,7 +2,7 @@
     <div class= "photo_div">
     <div class="swiper-container swiper-container-horizontal swiper-container-fade">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper" style="transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" style="width: 110px; transform: translate3d(0px, 0px, 0px); opacity: 1; transition-duration: 0ms;"><img src="http://localhost/wordpress/wp-content/themes/EnglishClass/img/2592406_s.jpg"></div>
+            <div class="swiper-wrapper" style="transition-duration: 0ms;">
                 <!-- Slides -->
                 <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 110px; transform: translate3d(-110px, 0px, 0px); opacity: 1; transition-duration: 0ms;"><img src="http://localhost/wordpress/wp-content/themes/american_village/assets/img/visual_1_pc.png" class="main_image"></div>
                 <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 110px; transform: translate3d(-220px, 0px, 0px); opacity: 1; transition-duration: 0ms;"><img src="http://localhost/wordpress/wp-content/themes/american_village/assets/img/logo.png" class="main_image"></div>

@@ -21,7 +21,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
           
-            <div class="navbar-collapse flex-row justify-content-end" id="navbarsExample08">
+            <div class="collapse navbar-collapse" id="navbarsExample08">
               <?php
                 wp_nav_menu( array(
                   'theme_location' => 'global',

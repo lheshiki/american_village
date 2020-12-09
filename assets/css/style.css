@@ -63,4 +63,7 @@
 
       .subtitle_fix{display: block;}
 
+      nav ul{display: none;}
+      nav ul li{margin-left: none;}
+
     }

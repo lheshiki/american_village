@@ -71,7 +71,7 @@ $article_lists = new WP_Query($args);
   </div>
 </div>
 <?php if($paged < $article_lists->max_num_pages) {?>
-<div class="moreread" id="next">
+<div class="d-flex justify-content-center m-3 moreread" id="next">
   <a href="<?php echo next_posts($article_lists->max_num_pages, false); ?>">もっと見る</a>
 </div>
 <?php }?>

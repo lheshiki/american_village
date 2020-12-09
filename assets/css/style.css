@@ -66,4 +66,13 @@
 
       .subtitle_fix{display: block;}
 
+      header nav ul{
+            display: block;
+      }
+
+      /* nav ul li{
+            margin-left: none;
+            margin-top: 20px;
+      } */
+
     }

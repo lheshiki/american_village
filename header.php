@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php  echo get_template_directory_uri(); ?>/assets/css/blog.css" class="css">
     <link rel="stylesheet" href="<?php  echo get_template_directory_uri(); ?>/assets/css/footer.css">
+    <link rel="stylesheet" href="<?php  echo get_template_directory_uri(); ?>/assets/css/single.css">
     <title>AmericanVillage</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
           
-            <div class="navbar-collapse flex-row justify-content-end" id="navbarsExample08">
+            <div class="collapse navbar-collapse" id="navbarsExample08">
               <?php
                 wp_nav_menu( array(
                   'theme_location' => 'global',

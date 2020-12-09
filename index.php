@@ -42,6 +42,16 @@
 </div>
 <div class="board">
   <div class="board-contents">
+<?php
+  $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+$args = array(
+    'orderby' => 'date',
+    'order'   => 'DESC',
+    'paged' => $paged,
+);
+$article_lists = new WP_Query($args);
+?>
+
   <?php while (have_posts()):the_post(); ?>
        <article>
           <div class="article">
@@ -60,6 +70,12 @@
       <?php endwhile; ?>
   </div>
 </div>
+<?php if($paged < $article_lists->max_num_pages) {?>
+<div class="moreread" id="next">
+  <a href="<?php echo next_posts($article_lists->max_num_pages, false); ?>">もっと見る</a>
+</div>
+<?php }?>
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <!-- ここまで！ -->
 <!-- ここからあいちゃんの部分 -->

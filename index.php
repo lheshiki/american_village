@@ -34,9 +34,6 @@
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
             
-            <!-- If we need navigation buttons -->
-            <!-- <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
         </div>
         <script>
             var mySwiper = new Swiper ('.swiper-container', {
@@ -49,11 +46,18 @@
             })
         </script>
         <!-- ここにあった！ -->
-
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" class="logo">
+          <picture>
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_pc.png" media="(min-width: 768px)">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_sp.png" media="(min-width: 375px)"/>
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_sp.png" media="(min-width: 320px)"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_pc.png" class="text_image">
+          </picture>
+          <div class="sub-container">
+            <p class="sub_explanation">進化し続ける「街」<br class="subtitle_fix">アメリカンビレッジマガジン</p>
+          </div>
     </div>
-    <div class="sub-container">
-        <p class="sub_explanation">進化し続ける「街」<br class="subtitle_fix">アメリカンビレッジマガジン</p>
-    </div>
+    
 <!-- ここからゆたかの部分！ -->
 <div class="name-board">  
   <h1>Latest Article</h1>

@@ -11,9 +11,12 @@
 <h1><?php the_title(); ?></h1>
 </div>
 <hr> <!--- 水平線が出るタグ --->
+
+<div class="post_content">
 <p>
     <?php the_content(); ?>
 </p>
+</div>
 
 <?php }else{ ?>
     <p>お探しの記事は見つかりませんでした</p>

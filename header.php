@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php  echo get_template_directory_uri(); ?>/assets/css/blog.css" class="css">
     <link rel="stylesheet" href="<?php  echo get_template_directory_uri(); ?>/assets/css/footer.css">
+    <link rel="stylesheet" href="<?php  echo get_template_directory_uri(); ?>/assets/css/single.css">
     <title>AmericanVillage</title>
 </head>
 <body>

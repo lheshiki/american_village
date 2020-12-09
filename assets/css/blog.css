@@ -3,6 +3,12 @@
     margin: 0;
 }
 /* ヘッダー */
+#navbarsExample08{
+
+}
+.menu{
+    margin-left:80%;
+}
 nav ul{
     display: flex;
 }

@@ -63,7 +63,13 @@
 
       .subtitle_fix{display: block;}
 
-      nav ul{display: none;}
-      nav ul li{margin-left: none;}
+      header nav ul{
+            display: block;
+      }
+
+      /* nav ul li{
+            margin-left: none;
+            margin-top: 20px;
+      } */
 
     }

@@ -1,13 +1,13 @@
 <?php get_header();?>
-    <div class= "photo_div">
-    <!-- Slider main container -->
-    <div class="swiper-container">
+    <div class= "slider_div">
+        <!-- Slider main container -->
+        <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_pc.png"></div>
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png"></div>
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>//assets/img/visual_text_pc.png"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide2.png"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Slide3.png"></div>
                 ...
             </div>
             <!-- If we need pagination -->
@@ -25,13 +25,6 @@
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
             autoplay: 3000,
-            speed:1000,
-            breakpoints: {
-                767: {
-                slidesPerView: 1,
-                spaceBetween: 0
-                }
-            }
             })
         </script>
         <!-- ここにあった！ -->

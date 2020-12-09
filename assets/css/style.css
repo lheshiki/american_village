@@ -1,11 +1,11 @@
 #navbarsExample08{margin-right: 30px;
                   font-weight: bold;}
 
-.swiper-container{
+.slider_div{
              /* height:450px; */
-             display: flex;
-             justify-content: center;
-             position: relative;
+             /* display: flex;
+             justify-content: center; */
+             /* position: relative; */
              margin-top: 60px;
             }
 .swiper-slide{display: flex;

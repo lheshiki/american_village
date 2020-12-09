@@ -1,6 +1,6 @@
 <?php get_header();?>
-    <div class="container">
-        <div class="main_slider col-12">
+    <div class= "photo_div">
+        <div class="main_slider">
           <picture class="<?php echo get_template_directory_uri(); ?>/main_pic">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_pc.png" media="(min-width: 768px)"/>
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_sp.png" media="(min-width: 375px)"/>

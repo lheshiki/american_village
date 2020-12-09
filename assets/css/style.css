@@ -4,22 +4,25 @@
              /* height:450px; */
              display: flex;
              justify-content: center;
+             position: relative;
+             margin-top: 60px;
             }
-.container{margin-top: 20px;}
 
 .logo{position: absolute;
-      top: 5%;
-      left: 8%;}
+      top: -90px;
+      left: 8%;
+      max-width: 100%;}
 .text_image{
             position: absolute;
-            top: 37%;
+            top: 235px;
             right: 10%;
+            max-width: 100%;
             }
 .sub_explanation{margin-left: 150px;
                  margin-top: 10px;
-                font-size: 25px;}
+                font-size: 25px;
+                max-width: 50%;}
 .subtitle_fix{display: none;}
-
 
 
 @media screen and (max-width: 767px) 
@@ -27,7 +30,7 @@
       .logo{position: absolute;
             text-align: center;
             max-width: 40%;
-            top: 20px;
+            top: -200px;
             left: 27%;
             }
       
@@ -39,14 +42,14 @@
                 }
 
        .main_image{
-                   padding-top: 10px;
+                   padding-top: 30px;
                    max-width: 100%;
                   }
         
        .text_image{
-                   top:280px;
+                   top:45px;
                    left:10%;
-                   max-width: 55%;
+                   max-width: 60%;
                   }
                    
       .sub-container{display: flex;
@@ -55,7 +58,8 @@
 
       .sub_explanation{text-align: center;
                        max-width: 100%;
-                       margin-left: 0; }
+                       margin-left: 0; 
+                       font-size: 15px;}
 
       .subtitle_fix{display: block;}
 

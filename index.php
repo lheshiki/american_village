@@ -51,7 +51,7 @@
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_pc.png" media="(min-width: 768px)">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_sp.png" media="(min-width: 375px)"/>
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_sp.png" media="(min-width: 320px)"/>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_pc.png" class="text_image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_pc.png" class="text_image" alt="American Village">
           </picture>
           <div class="sub-container">
             <p class="sub_explanation">進化し続ける「街」<br class="subtitle_fix">アメリカンビレッジマガジン</p>

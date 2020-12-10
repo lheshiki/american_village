@@ -79,10 +79,9 @@ $article_lists = new WP_Query($args);
           <div class="article">
               <a href="<?php the_permalink(); //詳細へリンク ?>" style="text-decoration: none; color: black;">
               <?php the_post_thumbnail(); ?>
-                  <img src="" alt="">
                   <div class="articleBox">
-                      <h1 class="date"><?php the_time('Y年m月d日'); //投稿日時　?></h1>
-                      <p class="text"><?php the_title(); //タイトル ?></p>
+                      <time class="date"><?php the_time('Y年m月d日'); //投稿日時　?></time>
+                      <h2 class="text"><?php the_title(); //タイトル ?></h2>
                       <p class="readMore">READ MORE</p>
                   </div>
                   <p class="blackLine"></p>
@@ -94,7 +93,7 @@ $article_lists = new WP_Query($args);
 </div>
 <?php if($paged < $article_lists->max_num_pages) {?>
 <div class="d-flex justify-content-center m-3 moreread" id="next">
-  <a href="<?php echo next_posts($article_lists->max_num_pages, false); ?>">もっと見る</a>
+  <a class="text-dark text-reset font-weight-bold" href="<?php echo next_posts($article_lists->max_num_pages, false); ?>">もっと見る</a>
 </div>
 <?php }?>
 

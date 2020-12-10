@@ -23,7 +23,7 @@ nav ul li{
     display: flex;
     justify-content: center;
 }
-.name-board h1{
+.name-board time{
     font-size: 30px;
 }
 .board{

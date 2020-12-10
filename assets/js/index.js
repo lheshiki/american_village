@@ -7,7 +7,4 @@ $("article")
 	$(this).find(".blackLine").removeClass("active");
 });
 
-
-// header部分
-
 });

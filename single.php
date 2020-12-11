@@ -14,7 +14,7 @@
 
 <div class="post_content">
 <p>
-    <?php the_content(); ?>
+    <?php the_content();?>
 </p>
 </div>
 

@@ -64,17 +64,17 @@
 </div>
 <div class="board">
   <div class="board-contents">
-<?php
-  $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-$args = array(
-    'orderby' => 'date',
-    'order'   => 'DESC',
-    'paged' => $paged,
-);
-$article_lists = new WP_Query($args);
-?>
+  <?php
+    $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+    $args = array(
+        'orderby' => 'date',
+        'order'   => 'DESC',
+        'paged' => $paged,
+        );
+    $article_lists = new WP_Query($args);
+  ?>
 
-  <?php while (have_posts()):the_post(); ?>
+<?php while (have_posts()):the_post(); ?>
        <article>
           <div class="article">
               <a href="<?php the_permalink(); //詳細へリンク ?>" style="text-decoration: none; color: black;">
@@ -88,9 +88,10 @@ $article_lists = new WP_Query($args);
               </a>
           </div>
       </article>
-      <?php endwhile; ?>
+  <?php endwhile; ?>     
   </div>
 </div>
+<!-- insert articles -->
 <?php if($paged < $article_lists->max_num_pages) {?>
 <div class="d-flex justify-content-center m-3 moreread" id="next">
   <a class="text-dark text-reset " href="<?php echo next_posts($article_lists->max_num_pages, false); ?>">もっと見る</a>

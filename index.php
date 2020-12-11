@@ -10,7 +10,7 @@
                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_pc.png" media="(min-width: 768px)"/>
                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_sp.png" media="(min-width: 375px)"/>
                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_sp.png" media="(min-width: 320px)"/>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_pc.png" class="main_image"/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_1_pc.png" class="main_image" alt="american village panorama"/>
                 </picture>
                 </div>
                 <div class="swiper-slide">
@@ -18,7 +18,7 @@
                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slide2.png" media="(min-width: 768px)"/>
                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slide2_sp.png" media="(min-width: 375px)"/>
                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slide2_sp.png" media="(min-width: 320px)"/>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide2.png" class="main_image"/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide2.png" class="main_image" alt="american village panorama"/>
                 </picture>
                 </div>
                 <div class="swiper-slide">
@@ -26,7 +26,7 @@
                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/Slide3.png" media="(min-width: 768px)"/>
                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slide3_sp.png" media="(min-width: 375px)"/>
                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slide3_sp.png" media="(min-width: 320px)"/>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Slide3.png" class="main_image"/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Slide3.png" class="main_image" alt="american village panorama"/>
                 </picture>
                 </div>
                 ...
@@ -46,7 +46,7 @@
             })
         </script>
         <!-- ここにあった！ -->
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" class="logo">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" class="American village logo">
           <picture>
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_pc.png" media="(min-width: 768px)">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_sp.png" media="(min-width: 375px)"/>
